@@ -20,6 +20,7 @@ let createCard = () => {
         let cardContainer = document.querySelector(".card-container");
         let card = document.createElement("div");
         card.id = `card-${cardNum}`;
+        card.classList.add(`card`);
         card.innerHTML = getCardHTML(text, cardNum);
         cardContainer.appendChild(card);
     }
